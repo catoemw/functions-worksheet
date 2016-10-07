@@ -13,8 +13,8 @@ function sumArr (array) {
 
 // console.log(sumArr(arr));
 
-// console.assert(typeof sumArr() === 'number');
-// console.assert(sumArr([1, 2, 3]) === 6);
+console.assert(typeof sumArr([1, 2, 3]) === 'number');
+console.assert(sumArr([1, 2, 3]) === 6);
 
 // EXERCISE 2
 
@@ -24,7 +24,7 @@ function yell(string) {
 
 // console.log(yell('hello'));
 
-// console.assert(typeof yell() === 'string');
+console.assert(yell('string') === 'STRING');
 
 function yell10(string) {
 	var yellArray = [];
@@ -35,6 +35,8 @@ function yell10(string) {
 }
 
 // console.log(yell10('yo'));
+
+console.assert(yell10('a')[3] === 'A');
 
 // EXERCISE 3
 
@@ -67,6 +69,8 @@ function longest(x, y) {
 
 // console.log(longest('Bob', [1, 2, 3, 4]));
 
+console.assert(longest('long', 'longer') === 'longer');
+
 function findLongestWord(string) {
 	var strArray = string.split(' ');
 	var longWord;
@@ -77,6 +81,8 @@ function findLongestWord(string) {
 }
 
 // console.log(findLongestWord('This is a string.'));
+
+console.assert(findLongestWord('a ab abc abcd') === 'abcd');
 
 // EXERCISE 5
 
@@ -90,6 +96,9 @@ function isVowel(string) {
 
 // console.log(isVowel('f'));
 
+console.assert(isVowel('a') === true);
+console.assert(isVowel('z') === false);
+
 // EXERCISE 6
 
 function reverseString(string) {
@@ -102,6 +111,8 @@ function reverseString(string) {
 
 // console.log(reverseString('This is a string'));
 
+console.assert(reverseString('Blah blah') === 'halb halB');
+
 function reverseStrings(array) {
 	var newArr = [];
 	for (var n = 0; n < array.length; n++) {
@@ -111,6 +122,8 @@ function reverseStrings(array) {
 }
 
 // console.log(reverseStrings(['first', 'second', 'third']));
+
+console.assert(reverseStrings(['Ab', 'cde', 'fgh'])[1] === 'edc');
 
 // EXERCISE 7
 
@@ -126,6 +139,8 @@ function adopt(gender, neutered, color) {
 	}
 }
 
-console.log(adopt('male', true, 'brown'));
+// console.log(adopt('male', true, 'brown'));
+
+console.assert(typeof adopt() === 'boolean');
 
 
